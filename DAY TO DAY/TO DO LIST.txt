@@ -1,0 +1,24 @@
+TO DO LIST
+
+09/03/2024
+
+1º npm init;
+2º criar um ficheiro chamado "index.js";
+3º mudar o nome da "script" do ficheiro "package.json", para "start": "node index.js";
+4º npm i express;
+5ª criar um ficheiro ".gitignore" com "node_modules";
+6º escrever o código básico do express "const express = require('express')
+const app = express()
+
+// ROTA
+app.get('/home', function (req, res) {
+  res.send('hello world');
+});
+
+app.listen(3000);"
+
+explicação:
+const express = require('express'): importa o módulo express para lidar com as rotas e a lógica do servidor.
+const app = express(): cria uma instância do aplicativo express.
+app.get('/home', function (req, res) { res.send('hello world'); });: define uma rota para o URL '/home'. quando alguém visita esse URL, o servidor responde com "hello world".
+app.listen(3000): Inicia o servidor na porta 3000, pronto para receber pedidos.
