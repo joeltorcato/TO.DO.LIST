@@ -22,3 +22,12 @@ const express = require('express'): importa o módulo express para lidar com as 
 const app = express(): cria uma instância do aplicativo express.
 app.get('/home', function (req, res) { res.send('hello world'); });: define uma rota para o URL '/home'. quando alguém visita esse URL, o servidor responde com "hello world".
 app.listen(3000): Inicia o servidor na porta 3000, pronto para receber pedidos.
+
+13/03/2024
+
+1º criar uma função de callback;
+2º criar uma variável port = 8080;
+3º criar pastas controller, database, models, public, routes e views;
+4º criar ficheiros "taskcontroller", "db", "task",
+"script", "style", "routes" e "index.ejs";
+
