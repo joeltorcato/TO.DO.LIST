@@ -29,5 +29,42 @@ app.listen(3000): Inicia o servidor na porta 3000, pronto para receber pedidos.
 2º criar uma variável port = 8080;
 3º criar pastas controller, database, models, public, routes e views;
 4º criar ficheiros "taskcontroller", "db", "task",
-"script", "style", "routes" e "index.ejs";
+"script", "style", "routes" e "index.ejs".
 
+14/03/2024
+
+1º criar a estrutura base de html no ficheiro "index.ejs";
+2º fazer a renderização do "index.ejs";
+
+app.set('view engine', 'ejs');
+
+explicação:
+configura a aplicação para utilizar o mecanismo de visualização EJS.
+
+const path = require('path');
+
+explicação:
+importa o módulo de caminhos.
+
+const getAll = (req, res) => {
+  return res.render("index");
+}
+
+module.exports = {
+  getAll,
+};
+
+explicação:
+define uma função para responder com a renderização 
+da página "index" e exporta-a.
+
+const getAll = (req, res) => {
+  return res.render("index");
+};
+
+module.exports = {
+  getAll,
+};
+
+explicação:
+define uma função para renderizar a página "index" e a exporta.
